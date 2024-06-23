@@ -1,0 +1,128 @@
+{ // 如果您是通过uni_modules形式引入uView，可以忽略此配置
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/collect/collect",
+			"style": {
+				"navigationBarTitleText": "收藏"
+			}
+		},
+		{
+			"path": "pages/data_view/index",
+			"style": {
+				"navigationBarTitleText": "数据分析"
+			}
+		},
+		{
+			"path": "pages/CM_inquire/index",
+			"style": {
+				"navigationBarTitleText": "查询"
+			}
+		},
+		{
+			"path": "pages/detail/index",
+			"style": {
+				"navigationBarTitleText": "查询结果"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/home/new",
+			"style": {
+				"navigationBarTitleText": "新闻资讯"
+			}
+		},
+		{
+			"path": "pages/chat/chat",
+			"style": {
+				"navigationBarTitleText": "AI咨询"
+			}
+		},
+		{
+			"path": "pages/advice/advice",
+			"style": {
+				"navigationBarTitleText": "建议"
+			}
+		},
+		{
+			"path": "pages/advice/from",
+			"style": {
+				"navigationBarTitleText": "建议"
+			}
+		},
+		{
+			"path": "pages/advice/advice_item/advice_item",
+			"style": {
+				"navigationBarTitleText": "建议"
+			}
+		},
+		
+		
+
+		{
+			"path": "pages/about/about",
+			"style": {
+				"navigationBarTitleText": "关于"
+			}
+		}, {
+			"path": "pages/setting/setting",
+			"style": {
+				"navigationBarTitleText": "修改用户信息",
+				//  "navigationBarTitleText": "修改用户信息",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/image/tabar/home1.png",
+				"selectedIconPath": "static/image/tabar/sehome1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/chat/chat",
+				"iconPath": "static/image/tabar/doctor.png",
+				"selectedIconPath": "static/image/tabar/sedoctor.png",
+				"text": "AI咨询"
+			},
+			{
+				"pagePath": "pages/data_view/index",
+				"iconPath": "static/data.png",
+				"selectedIconPath": "static/sedatas.png",
+				"text": "数据分析"
+			},
+			{
+				"pagePath": "pages/about/about",
+				"iconPath": "static/image/tabar/about1.png",
+				"selectedIconPath": "static/image/tabar/seabout1.png",
+				"text": "关于"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
